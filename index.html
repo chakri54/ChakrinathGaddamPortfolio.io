@@ -1,0 +1,945 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+		<style>
+
+
+			.resume-pdf-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    overflow: hidden;
+    border: 2px solid #0073e6;
+    text-align: center;
+}
+
+.resume-pdf-header {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0073e6;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.resume-pdf {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.resume-pdf iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Styled Download Button */
+.resume-download {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #0073e6, #005bb5);
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:hover {
+    background: linear-gradient(45deg, #005bb5, #003d82);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+		.btn-blue {
+			background-color: #007bff;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			border-radius: 5px;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+		
+		.btn-blue:hover {
+			background-color: #0056b3;
+		}
+		.intro-text {
+    color: #000; /* Black text */
+    font-size: 18px; /* Increased font size */
+    line-height: 1.6; /* Improved line spacing for better readability */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    text-align: justify; /* Justified text for better alignment */
+    padding: 10px 0; /* Padding to give the text some space around it */
+}
+
+.intro-text:hover {
+    color: #333; /* Slightly lighter color on hover for better interactivity */
+    text-decoration: underline; /* Optional: Underline on hover */
+}
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-dark {
+  background-color: #333;
+  border: none;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: #555;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+	</style>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Chakrinath Gaddam Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				
+				<h1 id="colorlib-logo"><a href="index.html">Chakrinath Gaddam</a></h1>
+				<span class="position"><a href="#">Aspiring Software Engineer | Python Full Stack Developer</a></span>
+			</div>
+			<div class="social-icons">
+                    <a href="https://github.com/chakri54" target="_blank" class="social-icon"><i class="bi bi-github"></i>
+                    <a href="https://www.linkedin.com/in/chakrinath-gaddam" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+					
+                </div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#about-section" data-nav-section="about">About</a></li>
+						<li><a href="#skills-section" data-nav-section="skills">Skills</a></li>
+						<li><a href="#education-section" data-nav-section="education">Education</a></li>
+						<li><a href="#experience" data-nav-section="experience">Experience</a></li>
+						<li><a href="#resume-section" data-nav-section="resume">Resume</a></li>
+						<li><a href="#project-section" data-nav-section="work">Projects</a></li>
+						<li><a href="#contact-section" data-nav-section="contact">Contact</a></li>
+						
+					</ul>
+				</div>
+			</nav>
+			
+
+			
+
+		</aside>
+		<section id="home-section"data-section="home">
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url();">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+									<div class="slider-text-inner js-fullheight">
+										<h1>Hi! <br>I'm Chakrinath Gaddam</h1>
+										<p class="intro-text"style="color:black">I'm an aspiring Software Engineer | Python Full Stack Developer with a passion for building innovative, scalable solutions. With expertise in Python, Django, Django Rest Framework, MySQL, HTML, CSS, JavaScript, and Bootstrap,React.js. I focus on creating web applications that are not only functional but also user-friendly. I'm eager to contribute to exciting projects and continue growing in the field of software development.</p>
+
+										<p><a class="btn btn-blue" href="https://drive.google.com/file/d/181vPUckI7KyBT3LUCpiS0_lyhlXQqnLN/view?usp=drive_link" target="_blank">Click Here to View/Download My Resume <i class="icon-download4"></i></a></p>
+										<p></p><a class="btn btn-green" href="#project-section" data-nav-section="work">
+                                            View My Projects <i class="icon-briefcase"></i>
+                                        </a></p>
+                                        <a class="btn btn-yellow"href="#contact-section" data-nav-section="contact">
+                                            Contact Me <i class="icon-mail4"></i>
+                                        </a>
+										<!-- Scroll down button -->
+                                        
+
+									</div>
+									
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	
+				  	</ul>
+			  	</div>
+			</section>
+
+			<section class="colorlib-about" data-section="about"id="about-section">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										
+										<h2 class="colorlib-heading animate-box">About Me</h2>
+										<h2 class="colorlib-heading" style="font-size: 36px; font-weight: bold; color:black"></h2>
+										<p style="font-size: 18px; line-height: 1.8;"> <strong>Hi, I'm Chakrinath Gaddam</strong>, an aspiring software engineer | Python Full Stack Developer with a passion for problem-solving and innovation. With expertise in <strong>Python, Django, MySQL, HTML, CSS, JavaScript, React</strong>, and more, I am dedicated to building scalable, efficient, and user-friendly applications. My goal is to continuously learn and evolve in the fast-paced tech industry.</p>
+										<p style="font-size: 18px; line-height: 1.8;">Throughout my journey, I have worked on various projects that have allowed me to fine-tune my skills, from developing full-stack applications to implementing complex algorithms. I have a strong understanding of both front-end and back-end development, which enables me to deliver seamless, end-to-end solutions.</p>
+										<p style="font-size: 18px; line-height: 1.8;">I'm excited to contribute to a dynamic team that values collaboration and creative thinking. I thrive in fast-paced environments and am committed to using technology to solve real-world challenges. Let's connect and work together to create impactful solutions!</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<!-- Skill Cards -->
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1" style="padding: 25px; text-align: center;">
+										<span class="icon2" style="font-size: 5px; color: #3498db;"><i class="fa-brands fa-python"></i></span>
+										<h3 style="font-size: 15px;">Python</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2" style="padding: 20px; text-align: center;">
+										<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+											<img src="https://cdn.iconscout.com/icon/free/png-512/free-django-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-7-pack-icons-282754.png?f=webp&w=256" width="35px" alt="Django Logo">
+										</span>
+										<h3 style="font-size: 15px">Django</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4" style="padding: 0.5px; text-align: center;">
+										<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+											<img src="https://icon.icepanel.io/Technology/svg/Django-REST.svg" width="35px" alt="Django Rest Framework Logo">
+										</span>
+										<h3 style="font-size: 10px">Django REST Framework</h3>
+									</div>
+								</div>
+								
+								
+								
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2" style="padding: 20px; text-align: center;">
+										<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+											<img src="https://cdn.iconscout.com/icon/free/png-512/free-mysql-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174941.png?f=webp&w=256" width="35px" alt="MYSQL Logo">
+										</span>
+										<h3 style="font-size: 15px">MY SQL</h3>
+									</div>
+								</div>
+								
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-1" style="padding: 20px; text-align: center;">
+										<span class="icon2" style="font-size: 5px; color: #1abc9c;"><i class="fa-brands fa-html5"></i></span>
+										<h3 style="font-size: 15px">HTML</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-2" style="padding: 20px; text-align: center;">
+										<span class="icon2" style="font-size: 5px; color: #9b59b6;"><i class="fa-brands fa-css3-alt"></i></span>
+										<h3 style="font-size: 15px">CSS</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-3" style="padding: 20px; text-align: center;">
+										<span class="icon2" style="font-size: 5px; color: #f1c40f;"><i class="fa-brands fa-bootstrap"></i></span>
+										<h3 style="font-size: 12px">Bootstrap</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4" style="padding: 20px; text-align: center;">
+										<span class="icon2" style="font-size: 3px; color: #e67e22;"><i class="fa-brands fa-js-square"></i></span>
+										<h3 style="font-size:12px">JavaScript</h3>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-react"></i></span>
+										<h3 style="font-size:12px">React.JS</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2 style="font-size: 30px; font-weight: bold; color: #34495e;">
+											Let’s connect and work together to build innovative software solutions that make an impact!
+										</h2>
+										<a href="#contact-section" class="btn-hire" style="font-size: 18px; padding: 15px 30px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">
+											Hire Me
+										</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			
+
+			
+			<section class="colorlib-skills" data-section="skills"id="skills-section">
+				
+				
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					
+					<div class="row">
+						<!-- Programming Languages -->
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1" style="padding: 25px; text-align: center;">
+								<span class="icon2" style="font-size: 5px; color: #3498db;"><i class="fa-brands fa-python"></i></span>
+								<h3 style="font-size: 15px;">Python</h3>
+							</div>
+						</div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2" style="padding: 20px; text-align: center;">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://icon.icepanel.io/Technology/svg/C.svg" width="35px" alt="Django Logo">
+								</span>
+								<h3 style="font-size: 15px">C</h3>
+							</div>
+						</div>
+						
+						
+						<!-- Database Management -->
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2" style="padding: 20px; text-align: center;">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://cdn.iconscout.com/icon/free/png-512/free-mysql-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174941.png?f=webp&w=256" width="35px" alt="MYSQL Logo">
+								</span>
+								<h3 style="font-size: 15px">MY SQL</h3>
+							</div>
+						</div>
+						<!-- Frameworks -->
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2" style="padding: 20px; text-align: center;">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://cdn.iconscout.com/icon/free/png-512/free-django-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-7-pack-icons-282754.png?f=webp&w=256" width="35px" alt="Django Logo">
+								</span>
+								<h3 style="font-size: 15px">Django</h3>
+							</div>
+						</div>
+						
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+							<div class="services color-4" style="padding: 0.5px; text-align: center;">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://icon.icepanel.io/Technology/svg/Django-REST.svg" width="35px" alt="Django Rest Framework Logo">
+								</span>
+								<h3 style="font-size: 10px">Django REST Framework</h3>
+							</div>
+						</div>
+						
+						
+			
+						<!-- Web Development -->
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInBottom">
+							<div class="services color-4">
+								<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-html5"></i></span>
+								<h3 style="font-size: 15px">HTML</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1">
+								<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-css3-alt"></i></span>
+								<h3 style="font-size: 15px">CSS</h3>
+							</div>
+						</div>
+						
+						
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2">
+								<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-bootstrap"></i></span>
+								<h3 style="font-size: 12px">Bootstrap</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInTop">
+							<div class="services color-3">
+								<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-js-square"></i></span>
+								<h3 style="font-size:12px">JavaScript</h3>
+							</div>
+						</div>
+						
+						
+					
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInBottom">
+							<div class="services color-4">
+								<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-react"></i></span>
+								<h3 style="font-size:12px">React.JS</h3>
+							</div>
+						</div>
+			
+						
+			
+						<!-- Tools -->
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInTop">
+							<div class="services color-3">
+								<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-github"></i></span>
+								<h3 style="font-size:12px">GitHub</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInBottom">
+							<div class="services color-4" style="text-align:center;">
+							  <span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="25px" alt="VS Code Logo">
+							  </span>
+							  <h3 style="font-size:10px; margin:0;">Visual Studio Code</h3>
+							</div>
+						  </div>
+						  
+
+
+
+
+						  
+						  
+						  
+			
+						<!-- Libraries -->
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://numpy.org/images/logo.svg" width="25px" alt="NumPy Logo">
+								</span>
+								<h3 style="font-size:12px; margin:0;">NumPy</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/135px-Pandas_mark.svg.png" width="35px" alt="Pandas Logo">
+								</span>
+								<h3 style="font-size:10px; margin:0;">Pandas</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://matplotlib.org/stable/_images/sphx_glr_logos2_001.png" width="35px" alt="MatplotLib Logo">
+								</span>
+								<h3 style="font-size:13px; margin:0;">MatplotLib</h3>
+							</div>
+						</div>
+			
+						<!-- Languages -->
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInTop">
+							<div class="services color-3">
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://cdn-icons-png.flaticon.com/128/11418/11418651.png" width="35px" alt="English Logo">
+								</span>
+								<h3 style="font-size:13px; margin:0;">English</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInBottom">
+							<div class="services color-4">
+								
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Telugu.svg/300px-Telugu.svg.png" width="35px" alt="Telugu Logo">
+								</span>
+								<h3 style="font-size:13px; margin:0;">Telugu</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInBottom">
+							<div class="services color-4">
+
+								<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
+									<img src="https://cdn-icons-png.flaticon.com/128/11085/11085137.png" width="35px" alt="Hindi Logo">
+								</span>
+								<h3 style="font-size:13px; margin:0;">Hindi</h3>
+							</div>
+						</div>
+			
+						<!-- Soft Skills -->
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1">
+								<span class="icon2"style="display:inline-block; width:40px; height:40px; line-height:40px; border-radius:50%; background-color:#f0f0f0; margin-bottom:5px;">
+									<i class="fa-solid fa-comments"></i></span>
+								<h3 style="font-size:10px; margin:0;">Communication</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2">
+								<span class="icon2"style="display:inline-block; width:40px; height:40px; line-height:40px; border-radius:50%; background-color:#f0f0f0; margin-bottom:5px;">
+									<i class="fa-solid fa-puzzle-piece"></i></span>
+								<h3 style="font-size:11px; margin:0;">Problem Solving</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2">
+								<span class="icon2"style="display:inline-block; width:40px; height:40px; line-height:40px; border-radius:50%; background-color:#f0f0f0; margin-bottom:5px;">
+									<i class="fa-solid fa-chart-line"></i></span>
+								<h3 style="font-size:13px; margin:0;">Analytical Skills</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2">
+								<span class="icon2"style="display:inline-block; width:40px; height:40px; line-height:40px; border-radius:50%; background-color:#f0f0f0; margin-bottom:5px;">
+									<i class="fa-solid fa-users"></i></span>
+								<h3 style="font-size:13px; margin:0;">Team Work</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2">
+								<span class="icon2"style="display:inline-block; width:40px; height:40px; line-height:40px; border-radius:50%; background-color:#f0f0f0; margin-bottom:5px;">
+									<i class="fa-solid fa-hourglass-half"></i></span>
+								<h3 style="font-size:11px; margin:0;">Time Management</h3>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInRight">
+							<div class="services color-2" style="text-align:center; padding:15px;">
+								<span class="icon2" style="display:inline-block; width:40px; height:40px; line-height:40px; border-radius:50%; background-color:#f0f0f0; margin-bottom:5px;">
+									<i class="fa-solid fa-arrows-rotate" style="font-size:20px;"></i>
+								</span>
+								<h3 style="font-size:13px; margin:0;">Adaptability</h3>
+							</div>
+						</div>
+						
+					</div>
+				
+			</section>
+			
+			
+			
+
+			<section class="colorlib-education" data-section="education"id="#education-section">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									
+									<!-- Education 1 -->
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													B.Tech, Computer Science and Engineering (Data Science)
+												</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<p>
+													<strong>Geethanjali College of Engineering and Technology (Autonomous), Hyderabad, India</strong><br>
+													<strong>CGPA:</strong> 8.14<br>
+													<strong>Course Duration:</strong> Nov 2020 - May 2024
+													<strong>Graduation Year:</strong>May 2024 
+												</p>
+											</div>
+										</div>
+									</div>
+			
+									<!-- Education 2 -->
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													Intermediate, MPC
+												</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body">
+												<p>
+													<strong>Narayana Junior College, Hyderabad, India</strong><br>
+													<strong>Percentage:</strong> 95.5%<br>
+													<strong>Duration:</strong> June 2018 - April 2020
+												</p>
+											</div>
+										</div>
+									</div>
+			
+									<!-- Education 3 -->
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingThree">
+											<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+													Secondary Education, 10th
+												</a>
+											</h4>
+										</div>
+										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+											<div class="panel-body">
+												<p>
+													<strong>Takshasila Public School (CBSE), Hyderabad, India</strong><br>
+													<strong>Percentage:</strong> 75.8%<br>
+													<strong>Secondary Education(10th Grade) Completion:</strong> April 2018
+												</p>
+											</div>
+										</div>
+									</div>
+			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<!-- AI/ML Internship at Cantilever Labs -->
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="job-entry">
+								<h3>AI/ML Internship</h3>
+								<p class="meta">Cantilever Labs, Hyderabad, India <span>Jul 2022 - Sep 2022</span></p>
+								<p><a class="btn btn-blue" href="https://drive.google.com/file/d/1QFpfVJ0kjuv5bYTImsuFclFbTBEdwi99/view?usp=drive_link" target="_blank">Download Internship Certificate <i class="icon-download4"></i></a></p>
+
+								<p class="description">
+									During this internship, I worked on a Face Mask Detection project, where I developed a solution using OpenCV and Python. The project utilized computer vision techniques to detect mask presence and machine learning for accurate classification. This project contributed to public health by promoting mask-wearing compliance. I received a Certificate of Participation for my contributions.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><br><br><br><br><br><br>
+			<!-- Resume Section -->
+			<section id="resume-section" class="colorlib-resume" data-section="resume">
+			
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							
+							<h2 class="colorlib-heading">Resume</h2>
+						</div>
+					</div>
+			
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Google Docs PDF Viewer -->
+							<div class="resume-pdf-container animate-box" data-animate-effect="fadeInLeft">
+								<div class="resume-pdf-header">
+									<h3>My Resume</h3>
+								</div>
+								<div class="resume-pdf">
+									<iframe src="https://drive.google.com/file/d/181vPUckI7KyBT3LUCpiS0_lyhlXQqnLN/preview" allowfullscreen></iframe>
+								</div>
+								<div class="resume-download">
+									<a href="https://drive.google.com/uc?export=download&id=181vPUckI7KyBT3LUCpiS0_lyhlXQqnLN" target="_blank" class="download-btn">
+										📄 Download Resume
+									</a>
+								</div>
+							</div>
+							
+							
+			
+							<!-- Optional: Download Button -->
+							<p style="text-align:center; margin-top: 15px;">
+								<a href="https://drive.google.com/file/d/181vPUckI7KyBT3LUCpiS0_lyhlXQqnLN/view?usp=drive_link" 
+									target="_blank" 
+									class="resume-view-btn"
+									title="Redirecting to Google Drive for a detailed view of my resume">
+										📄 Redirect to Google Drive for a detailed view of my resume
+										</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section id="project-section"class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row g-4">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading animate-box">My Projects</h2>
+						</div>
+					</div>
+					
+					<div class="row g-4">
+						<!-- Project 6: The Bicycle Hub (E-commerce Platform) -->
+						<div class="col-md-4 animate-box mb-4" data-animate-effect="fadeInRight">
+							<div class="card">
+								<img src="images/ecommerce.jpeg" class="card-img-top" alt="The Bicycle Hub: Full-Stack E-commerce Platform">
+								<div class="card-body">
+									<h5 class="card-title"><a href="work.html">The Bicycle Hub: Full-Stack E-commerce Platform Using Django ,MYSQL and Core Web Tecnologies</a></h5>
+									<p class="card-text">Python Full-Stack Development (DJANGO,MYSQL,HTML,CSS,BOOTSTRAP,JAVASCRIPT)</p>
+									<a href="https://github.com/chakri54/The-Bicycle-Hub-Full-Stack-E-commerce-Platform-Developed-Using-Django-and-Core-Web-Technologies" class="btn btn-dark" target="_blank">View on GitHub</a>
+								</div>
+							</div>
+						</div>
+			
+						<!-- Project 1: Renal Vision of Chronic Kidney Prediction -->
+						<div class="col-md-4 animate-box mb-4" data-animate-effect="fadeInLeft">
+							<div class="card">
+								<img src="images/kidney.jpg" class="card-img-top" alt="Renal Vision of Chronic Kidney Prediction">
+								<div class="card-body">
+									<h5 class="card-title"><a href="work.html">Renal Vision of Chronic Kidney Prediction Using Maching Learning</a></h5>
+									<p class="card-text">Python</p>
+									<a href="https://github.com/chakri54/Renal-Vision-of-Chronic-Kidney-Disease-Prediction-Using-Machiine-Learning" class="btn btn-dark" target="_blank">View on GitHub</a>
+								</div>
+							</div>
+						</div>
+			
+						<!-- Project 2: To-Do List Web Application -->
+						<div class="col-md-4 animate-box mb-4" data-animate-effect="fadeInRight">
+							<div class="card">
+								<img src="images/todo.jpeg" class="card-img-top" alt="Django Based To-Do List Application">
+								<div class="card-body">
+									<h5 class="card-title"><a href="work.html">Django Based To-Do List Application</a></h5>
+									<p class="card-text">Python,Django,MYSQL,HTML,CSS,BOOTSTRAP</p>
+									<a href="https://github.com/chakri54/TODOLIST-APP-Using-DJANGO" class="btn btn-dark" target="_blank">View on GitHub</a>
+								</div>
+							</div>
+						</div>
+			
+						<!-- Project 3: Inventory Management for Fruits, Vegetables, Groceries -->
+						<div class="col-md-4 animate-box mb-4" data-animate-effect="fadeInTop">
+							<div class="card">
+								<img src="images/inventorym.jpeg" class="card-img-top" alt="Inventory Management for Fruits, Vegetables, Groceries USING Python and MYSQL">
+								<div class="card-body">
+									<h5 class="card-title"><a href="work.html">Inventory Management - PYTHON AND MYSQL</a></h5>
+									<p class="card-text">Python and MYSQL</p>
+									<a href="https://github.com/chakri54/Inventory-Management-System-for-Grocery-Vegetables-and-Fruits-USING-PYTHON-AND-MYSQL-SQL-" class="btn btn-dark" target="_blank">View on GitHub</a>
+								</div>
+							</div>
+						</div>
+			
+						<!-- Project 4: Movie Quiz Game Using Python and MySQL -->
+						<div class="col-md-4 animate-box mb-4" data-animate-effect="fadeInBottom">
+							<div class="card">
+								<img src="images/movie.jpg" class="card-img-top" alt="Movie Quiz Game Using Python and MySQL">
+								<div class="card-body">
+									<h5 class="card-title"><a href="work.html">Movie Quiz Game Using Python and MySQL</a></h5>
+									<p class="card-text">Interactive Game Using Python and MYSQL</p>
+									<a href="https://github.com/chakri54/MOVIE-QUIZ-GAME-APPLICATION-USING-PYTHON-AND-MYSQL-SQL-" class="btn btn-dark" target="_blank">View on GitHub</a>
+								</div>
+							</div>
+						</div>
+			
+						<!-- Project 5: Virtual Painting Air Canvas -->
+						<div class="col-md-4 animate-box mb-4" data-animate-effect="fadeInLeft">
+							<div class="card">
+								<img src="images/virtualcanvas.jpeg" class="card-img-top" alt="Virtual Painting Air Canvas">
+								<div class="card-body">
+									<h5 class="card-title"><a href="work.html">Virtual Painting Air Canvas</a></h5>
+									<p class="card-text">Python,Opencv</p>
+									<a href="https://github.com/chakri54/VIRTUAL-PAINTING-AIR-CANVAS-USING-PYTHON" class="btn btn-dark" target="_blank">View on GitHub</a>
+								</div>
+							</div>
+						</div>
+						
+			
+						<!-- Project 7: A Simple Arithmetic Calculator -->
+						<div class="col-md-4 animate-box mb-4" data-animate-effect="fadeInLeft">
+							<div class="card">
+								<img src="images/calci.png" class="card-img-top" alt="A Simple Arithmetic Calculator">
+								<div class="card-body">
+									<h5 class="card-title"><a href="work.html">A Simple Arithmetic Calculator</a></h5>
+									<p class="card-text">HTML, CSS, Bootstrap, JavaScript</p>
+									<a href="https://github.com/chakri54/Calculator-Using-Html-Css-Bootstrap-JavaScript" class="btn btn-dark" target="_blank">View on GitHub</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Navigation -->
+
+
+			
+			
+
+
+			
+			  
+
+			
+
+			<section id="contact-section" class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="bi bi-envelope"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="mailto:gchakrinathgoud2003@gmail.com">gchakrinathgoud2003@gmail.com</a></p>
+								</div>
+								
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>Hyderabad,Telangana,India</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel://">+91 6301558162</a></p>
+								</div>
+							</div>
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="bi bi-globe2"></i>
+								</div>
+								<div class="colorlib-content">
+									<div class="social-icons">
+										<a href="https://www.linkedin.com/in/chakrinath-gaddam" target="_blank" class="social-icon">
+											<img src="https://img.icons8.com/?size=48&id=13930&format=png" alt="LinkedIn Icon" width="45" height="45">
+										</a>
+									</div>
+								</div>
+								
+							</div>
+							
+							
+							
+							
+							
+						</div>
+						
+					</div>
+				</div>
+				
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	
+
+	</body>
+</html>
+
