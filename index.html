@@ -81,17 +81,23 @@
 			background-color: #0056b3;
 		}
 		.intro-text {
-    color: #000; /* Black text */
-    font-size: 18px; /* Increased font size */
-    line-height: 1.6; /* Improved line spacing for better readability */
-    font-family: 'Arial', sans-serif; /* Clean font */
-    text-align: justify; /* Justified text for better alignment */
-    padding: 10px 0; /* Padding to give the text some space around it */
+			
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+			text-align: justify; /* Optional for better readability */
+			margin: 0 auto;		
+			color: #000; /* Black text */
+			font-size: 18px; /* Increased font size */
+			line-height: 1.6; /* Improved line spacing for better readability */
+			font-family: 'Arial', sans-serif; /* Clean font */
+			/*text-align: justify; Justified text for better alignment */
+			padding: 10px 0; /* Padding to give the text some space around it */
+			max-width: 90%; /* Prevents stretching on large screens */
 }
 
 .intro-text:hover {
     color: #333; /* Slightly lighter color on hover for better interactivity */
-    text-decoration: underline; /* Optional: Underline on hover */
+    
 }
 .card {
   border: none;
@@ -945,4 +951,3 @@ html {
 
 	</body>
 </html>
-
