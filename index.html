@@ -4,6 +4,98 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 		<style>
+			/* General Styling */
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Contact Icon */
+.contact-icon {
+    font-size: 28px;
+    color: #007bff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Icon Hover Effect */
+.contact-item:hover .contact-icon {
+    color: #0e76a8; /* LinkedIn blue for hover */
+}
+
+/* Text for Contact Items */
+.contact-text p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Styling Links */
+.contact-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0e76a8;
+    text-decoration: underline;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .contact-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+
+    .contact-icon {
+        font-size: 24px;
+        margin-right: 15px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+    }
+}
+
+/* Add a custom style for LinkedIn with icon and hover effect */
+.contact-link.linkedin-link {
+    color: #0077b5;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-link.linkedin-link:hover {
+    color: #0e76a8;
+}
+
+.contact-link.linkedin-link i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
 
 
 			.resume-pdf-container {
@@ -64,36 +156,146 @@
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
+/* General Styling for Hero Section */
+.slider-text-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
 
-		.btn-blue {
-			background-color: #007bff;
-			color: white;
-			padding: 10px 20px;
-			text-align: center;
-			border-radius: 5px;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			transition: background-color 0.3s ease;
-		}
-		
-		.btn-blue:hover {
-			background-color: #0056b3;
-		}
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 30px;
+    font-weight: 400;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container a {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Button Style for Different Actions */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+/* Resume Button */
+.btn-resume {
+    background-color: #28a745;
+}
+
+.btn-resume:hover {
+    background-color: #218838;
+}
+
+/* Projects Button */
+.btn-projects {
+    background-color: #f39c12;
+}
+
+.btn-projects:hover {
+    background-color: #e67e22;
+}
+
+/* Contact Button */
+.btn-contact {
+    background-color: #e74c3c;
+}
+
+.btn-contact:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .button-container {
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Animation for Fade In */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*
 		.intro-text {
 			
 			word-wrap: break-word;
 			overflow-wrap: break-word;
-			text-align: justify; /* Optional for better readability */
+			text-align: justify; /* Optional for better readability 
 			margin: 0 auto;		
-			color: #000; /* Black text */
-			font-size: 18px; /* Increased font size */
-			line-height: 1.6; /* Improved line spacing for better readability */
+			color: #000; /* Black text 
+			font-size: 18px;  Increased font size 
+			line-height: 1.6; /* Improved line spacing for better readability 
 			font-family: 'Arial', sans-serif; /* Clean font */
-			/*text-align: justify; Justified text for better alignment */
-			padding: 10px 0; /* Padding to give the text some space around it */
-			max-width: 90%; /* Prevents stretching on large screens */
+			/*text-align: justify; Justified text for better alignment 
+			padding: 10px 0; Padding to give the text some space around it max-width: 90%;  Prevents stretching on large screens 
 }
+*/
 
 .intro-text:hover {
     color: #333; /* Slightly lighter color on hover for better interactivity */
@@ -144,6 +346,38 @@
 html {
     scroll-behavior: smooth;
 }
+/* Base button styling */
+
+
+/* Button Color Schemes */
+.btn-about {
+    background-color: #ffffff;
+    color: #4CAF50; /* Green for growth, success */
+    border: 2px solid #4CAF50;
+}
+
+.btn-about:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+    transform: translateY(-3px);
+}
+
+
+
+
+/* Button Hover Effect */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 14px;
+        padding: 12px 25px;
+        width: 100%; /* Full-width on mobile */
+    }
+}
+
 
 
 
@@ -248,26 +482,24 @@ html {
 				   	<li style="background-image: url();">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 									<div class="slider-text-inner js-fullheight">
-										<h1>Hi! <br>I'm Chakrinath Gaddam</h1>
-										<p class="intro-text"style="color:black">I'm an aspiring Software Engineer | Python Full Stack Developer with a passion for building innovative, scalable solutions. With expertise in Python, Django, Django Rest Framework, MySQL, HTML, CSS, JavaScript, and Bootstrap,React.js. I focus on creating web applications that are not only functional but also user-friendly. I'm eager to contribute to exciting projects and continue growing in the field of software development.</p>
-
-										<p><a class="btn btn-blue" href="https://drive.google.com/file/d/11e8Q-q-CgqiQOp8YDKC-6omGAQBtAwaB/view?usp=drive_link" target="_blank">Click Here to View/Download My Resume <i class="icon-download4"></i></a></p>
-										<p></p><a class="btn btn-success" href="#project-section" data-nav-section="work">
-                                            View My Projects <i class="icon-briefcase"></i>
-                                        </a></p>
-                                        <a class="btn btn-warning"href="#contact-section" data-nav-section="contact">
-                                            Contact Me <i class="icon-mail4"></i>
-                                        </a>
-										<!-- Scroll down button -->
-                                        
-
+										<h1 class="hero-title">Hi! <br> I'm Chakrinath Gaddam</h1>
+										<p class="intro-text" style="color:black; font-size: 1.2rem; line-height: 1.8; max-width: 700px;">
+											Aspiring Software Engineer | Python Full Stack Developer | Expertise in Python, Django, and Full Stack Development. Passionate about building innovative, scalable solutions and exploring emerging technologies. Eager to contribute to impactful projects and committed to continuous learning and growth in software development.
+										</p>
+							
+										<div class="button-container">
+											<p><a href="#about-section" data-nav-section="about" class="btn btn-about">Learn More About Me</a></p>
+											<p><a class="btn btn-resume" href="https://drive.google.com/file/d/11e8Q-q-CgqiQOp8YDKC-6omGAQBtAwaB/view?usp=drive_link" target="_blank">View/Download My Resume <i class="icon-download4"></i></a></p>
+											<p><a class="btn btn-projects" href="#project-section" data-nav-section="work">View My Projects <i class="icon-briefcase"></i></a></p>
+											<p><a class="btn btn-contact" href="#contact-section" data-nav-section="contact">Contact Me <i class="icon-mail4"></i></a></p>
+										</div>
 									</div>
-									
-					   			</div>
-					   		</div>
+								</div>
+							</div>
+							
 				   		</div>
 				   	</li>
 				   	
@@ -291,73 +523,16 @@ html {
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<!-- Skill Cards -->
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1" style="padding: 25px; text-align: center;">
-										<span class="icon2" style="font-size: 5px; color: #3498db;"><i class="fa-brands fa-python"></i></span>
-										<h3 style="font-size: 15px;">Python</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2" style="padding: 20px; text-align: center;">
-										<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
-											<img src="https://cdn.iconscout.com/icon/free/png-512/free-django-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-7-pack-icons-282754.png?f=webp&w=256" width="35px" alt="Django Logo">
-										</span>
-										<h3 style="font-size: 15px">Django</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4" style="padding: 0.5px; text-align: center;">
-										<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
-											<img src="https://icon.icepanel.io/Technology/svg/Django-REST.svg" width="35px" alt="Django Rest Framework Logo">
-										</span>
-										<h3 style="font-size: 10px">Django REST Framework</h3>
-									</div>
-								</div>
+							
 								
 								
 								
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2" style="padding: 20px; text-align: center;">
-										<span class="icon2" style="display:inline-block; border-radius:50%; width:50px; height:50px; background-color:#f0f0f0; padding:5px; margin-bottom:5px;">
-											<img src="https://cdn.iconscout.com/icon/free/png-512/free-mysql-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174941.png?f=webp&w=256" width="35px" alt="MYSQL Logo">
-										</span>
-										<h3 style="font-size: 15px">MY SQL</h3>
-									</div>
-								</div>
 								
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-1" style="padding: 20px; text-align: center;">
-										<span class="icon2" style="font-size: 5px; color: #1abc9c;"><i class="fa-brands fa-html5"></i></span>
-										<h3 style="font-size: 15px">HTML</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-2" style="padding: 20px; text-align: center;">
-										<span class="icon2" style="font-size: 5px; color: #9b59b6;"><i class="fa-brands fa-css3-alt"></i></span>
-										<h3 style="font-size: 15px">CSS</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-3" style="padding: 20px; text-align: center;">
-										<span class="icon2" style="font-size: 5px; color: #f1c40f;"><i class="fa-brands fa-bootstrap"></i></span>
-										<h3 style="font-size: 12px">Bootstrap</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4" style="padding: 20px; text-align: center;">
-										<span class="icon2" style="font-size: 3px; color: #e67e22;"><i class="fa-brands fa-js-square"></i></span>
-										<h3 style="font-size:12px">JavaScript</h3>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-4 col-lg-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"style="font-size: 5px"><i class="fa-brands fa-react"></i></span>
-										<h3 style="font-size:12px">React.JS</h3>
-									</div>
-								</div>
-							</div>
+								
+								
+								
+								
+							
 							<div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<div class="hire">
@@ -872,55 +1047,53 @@ html {
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="bi bi-envelope"></i>
+						<div class="col-md-6">
+							<!-- Email Contact -->
+							<div class="contact-item animate-box" data-animate-effect="fadeInLeft">
+								<div class="contact-icon">
+									<i class="bi bi-envelope-fill"></i>
 								</div>
-								<div class="colorlib-text">
-									<p><a href="mailto:gchakrinathgoud2003@gmail.com">gchakrinathgoud2003@gmail.com</a></p>
-								</div>
-								
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>Hyderabad,Telangana,India</p>
+								<div class="contact-text">
+									<p><a href="mailto:gchakrinathgoud2003@gmail.com" class="contact-link">gchakrinathgoud2003@gmail.com</a></p>
 								</div>
 							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
+					
+							<!-- Location -->
+							<div class="contact-item animate-box" data-animate-effect="fadeInLeft">
+								<div class="contact-icon">
+									<i class="bi bi-geo-alt-fill"></i>
 								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://">+91 6301558162</a></p>
+								<div class="contact-text">
+									<p>Hyderabad, Telangana, India</p>
 								</div>
 							</div>
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="bi bi-globe2"></i>
+					
+							<!-- Phone Number -->
+							<div class="contact-item animate-box" data-animate-effect="fadeInLeft">
+								<div class="contact-icon">
+									<i class="bi bi-phone-fill"></i>
 								</div>
-								<div class="colorlib-content">
-									<div class="social-icons">
-										<a href="https://www.linkedin.com/in/chakrinath-gaddam" target="_blank" class="social-icon">
-											<img src="https://img.icons8.com/?size=48&id=13930&format=png" alt="LinkedIn Icon" width="45" height="45">
-										</a>
-									</div>
+								<div class="contact-text">
+									<p><a href="tel:+916301558162" class="contact-link">+91 6301558162</a></p>
 								</div>
-								
 							</div>
-							
-							
-							
-							
-							
 						</div>
-						
+					
+						<div class="col-md-6">
+							<!-- LinkedIn Profile -->
+							<div class="contact-item animate-box" data-animate-effect="fadeInLeft">
+								<div class="contact-icon">
+									<i class="bi bi-linkedin"></i>
+								</div>
+								<div class="contact-text">
+									<a href="https://www.linkedin.com/in/chakrinath-gaddam" target="_blank" class="contact-link">View My LinkedIn Profile</a>
+								</div>
+							</div>
+						</div>
 					</div>
+					
+					
+					
 				</div>
 				
 			</section>
